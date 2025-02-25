@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/spinner.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg backdrop-blur-md w-full max-w-sm">
+        <h2 class="text-xl font-semibold text-white text-center mb-4">Contacto</h2>
+        <form id="formulario" class="space-y-4">
+            <div>
+                <label for="name" class="block text-white text-sm font-medium mb-1">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" 
+                    class="w-full p-3 bg-white bg-opacity-70 border border-white rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900 placeholder-gray-600">
+            </div>
+            <div>
+                <label for="email" class="block text-white text-sm font-medium mb-1">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" 
+                    class="w-full p-3 bg-white bg-opacity-70 border border-white rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900 placeholder-gray-600">
+            </div>
+            <div>
+                <label for="subject" class="block text-white text-sm font-medium mb-1">Título del Email</label>
+                <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" 
+                    class="w-full p-3 bg-white bg-opacity-70 border border-white rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900 placeholder-gray-600">
+            </div>
+            <div>
+                <label for="message" class="block text-white text-sm font-medium mb-1">Descripción</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" 
+                    class="w-full p-3 bg-white bg-opacity-70 border border-white rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900 placeholder-gray-600 resize-none h-20"></textarea>
+            </div>
+            <div class="flex space-x-2">
+                <button id="submit" disabled type="submit" class="w-1/2 pointer opacity-50 bg-white bg-opacity-30 hover:bg-opacity-50 text-white font-bold py-2 rounded-md transition">
+                    Enviar
+                </button>
+                <button id="buttonReset" type="reset" class="w-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white font-bold py-2 rounded-md transition">
+                    Restablecer
+                </button>
+            </div>
+            <div class="flex justify-center items-center">
+                <span class="loader hidden"></span>
+            </div>
+        </form>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+
+
+</html>
